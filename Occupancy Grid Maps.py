@@ -261,5 +261,5 @@ def belief_update(i):
 map_anim = anim.FuncAnimation(map_fig, map_update, frames=len(x[0, :]), repeat=False)
 invmod_anim = anim.FuncAnimation(invmod_fig, invmod_update, frames=len(x[0, :]), repeat=False)
 belief_anim = anim.FuncAnimation(belief_fig, belief_update, frames=len(x[0, :]), repeat=False)
-
+belief_anim.save('occmap.mp4', writer='ffmpeg', fps=30)
 plt.show()
